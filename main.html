@@ -12,12 +12,15 @@
         const student ={
             name:"John Doe"
         };
-        Object.defineProperty(Object.prototype, 'getKeys', {
-            value: function() {
-                return Object.keys(this);
-            },
-            enumerable: false
-        });
+        Object.prototype.getKeys=function () {
+            let keys = [];
+            for(let key in this) {
+                if(this.hasOwnProperty(key)) {
+                    keys.push(key);
+                }
+            }
+            return keys;
+        };
         console.log(student.getKeys());
     </script>
 
