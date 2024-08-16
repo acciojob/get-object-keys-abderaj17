@@ -10,16 +10,10 @@
     <!-- the entire body must be written by student -->
     <script type="text/javascript">
         const student ={
-            name:"John Doe"
-        };
-        Object.prototype.getKeys=function () {
-            let keys = [];
-            for(let key in this) {
-                if(this.hasOwnProperty(key)) {
-                    keys.push(key);
-                }
+            name: "John Doe",
+            getKeys: function() {
+                return Object.keys(this);
             }
-            return keys;
         };
         console.log(student.getKeys());
     </script>
