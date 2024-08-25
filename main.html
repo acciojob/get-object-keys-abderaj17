@@ -9,13 +9,13 @@
 <body>
     <!-- the entire body must be written by student -->
     <script type="text/javascript">
-       const student = {
+const student = {
   name: "John Doe"
 };
 
 // Adding getKeys method to the Object prototype
 Object.prototype.getKeys = function() {
-  return Object.keys(this);
+  return Object.getOwnPropertyNames(this);
 };
 
 // Testing the getKeys method
