@@ -10,15 +10,12 @@
     <!-- the entire body must be written by student -->
     <script type="text/javascript">
 const student = {
-  name: "John Doe",
-  getKeys: function() {
-    return Object.keys(this);
-  }
+  name: "John Doe";
 };
-
-// Testing the getKeys method
-const keys = student.getKeys();
-console.log(keys); 
+		student.getKeys = function() {
+  return Object.keys(this);
+};
+		console.log(student.getKeys()); // This should log ["name", "getKeys"]
     </script>
 
 </body>
