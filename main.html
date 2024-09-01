@@ -9,15 +9,18 @@
 <body>
     <!-- the entire body must be written by student -->
     <script type="text/javascript">
-   Object.prototype.getKeys = function() {
+  const student = {
+  name: 'John Doe'
+};
+
+// Add a property to the Object prototype called getKeys() that returns an array of all the keys in the object
+Object.prototype.getKeys = function () {
   return Object.keys(this);
 };
 
-const student = {
-  name: "John Doe",
-};
+// Example usage
+console.log(student.getKeys()); // Output: ['name']
 
-console.log(student.getKeys()); // This should log ["name", "getKeys"]
     </script>
 
 </body>
