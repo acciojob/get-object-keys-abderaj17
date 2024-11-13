@@ -1,6 +1,7 @@
- const student = {
-    name: 'John Doe'
-};
-student.prototype.getKeys = function() {
-    return student.keys(this);
-};
+//your JS code here. If required.
+let student ={
+	name : "ramesh", 
+	}
+student.prototype.getKeys = function () {
+	return student.keys(this);
+}
